@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/testView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hiButtom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Say Hi!"
+        app:layout_constraintBottom_toBottomOf="@id/helloBottom"
+        app:layout_constraintLeft_toRightOf="@id/helloBottom" />
+
+    <Button
+        android:id="@+id/androidButtom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        app:layout_constraintTop_toBottomOf="@id/testView" />
+
+    <Button
+        android:id="@+id/helloBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        app:layout_constraintTop_toBottomOf="@id/androidButtom"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <Button
+
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintVertical_bias="0.7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/helloBottom"
+
+        android:text="GoodBye"/>
+
+    <TextView
+        android:id="@+id/textviewOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One"
+        app:layout_constraintCircle="@id/button2"
+        app:layout_constraintCircleAngle="270"
+        app:layout_constraintCircleRadius="100dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout><!--app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="0.422"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"-->
+
+
